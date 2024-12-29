@@ -1,0 +1,78 @@
+#content{
+    width: 1250 px;
+    min-height:  930px;
+    margin: 0 auto;
+    margin-top: 60px;
+    margin-bottom: 30px;
+}
+
+.box{
+    background: white;
+    border-radius: 10px;
+    width: 890px;
+    min-height: 935px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    margin: 0 auto;
+}
+.box a {
+    font-size: 20px;
+    font-family: 'Georgia', serif;
+    color: #1E90FF;
+    text-decoration: none;
+}
+
+.box a:hover {
+    text-decoration: underline;
+    color: rgb(2, 116, 2);
+    transition: all 100ms;
+}
+
+.box .image{
+    width: 45%;
+    float: left;
+    margin-right: 40px;
+}
+
+.box .image img {
+    width: 100%;
+}
+
+.title{
+    color: #444;
+    letter-spacing: 1px;
+    font-size:30px;
+    margin-bottom: 10px;
+}
+
+footer{
+    width: 1250px;
+    background-color: #1B1E1F;
+    border: 1px solid #333;
+    border-radius: 3px;
+    color: #D1D4D6;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 40px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    box-shadow: 0px 0px 20px gray;
+}
+.box form input,
+.box form label{
+    display: block;
+    padding: 5px;
+    padding-left: 0%;
+}
+
+.box form input[type="text"], 
+.box form input[type="password"], 
+.box form input[type="email"], 
+.box form input[type="password"],
+.box form textarea{
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #d6d6d6;
+    border-radius: 5px;
+}

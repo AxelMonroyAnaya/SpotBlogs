@@ -1,0 +1,50 @@
+/* Estilo para el contenedor del formulario */
+form {
+    max-width: 400px; /* Ancho máximo del formulario */
+    margin: 20px auto; /* Centrar el formulario */
+    padding: 20px; /* Espaciado interno */
+    background-color: #f9f9f9; /* Fondo del formulario */
+    border: 1px solid #ccc; /* Borde gris claro */
+    border-radius: 8px; /* Bordes redondeados */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra */
+}
+
+/* Estilo para las etiquetas */
+label {
+    display: block; /* Hacer que cada etiqueta sea un bloque */
+    font-weight: bold; /* Texto en negrita */
+    margin-bottom: 8px; /* Espacio debajo de la etiqueta */
+}
+
+/* Estilo para los campos del formulario */
+input, select, textarea {
+    width: 100%; /* Que ocupen todo el ancho disponible */
+    padding: 10px; /* Espaciado interno */
+    margin-bottom: 15px; /* Espaciado entre campos */
+    border: 1px solid #ccc; /* Borde gris claro */
+    border-radius: 4px; /* Bordes redondeados */
+    box-sizing: border-box; /* Incluye el borde en el ancho */
+    font-size: 14px; /* Tamaño del texto */
+}
+
+/* Estilo para el botón */
+button {
+    background-color: #4CAF50; /* Fondo verde */
+    color: white; /* Texto blanco */
+    border: none; /* Sin borde */
+    padding: 10px 15px; /* Espaciado interno */
+    border-radius: 4px; /* Bordes redondeados */
+    font-size: 16px; /* Tamaño del texto */
+    cursor: pointer; /* Cambiar cursor al pasar por encima */
+}
+
+button:hover {
+    background-color: #45a049; /* Fondo más oscuro al pasar el ratón */
+}
+
+/* Estilo para errores */
+.errorlist {
+    color: red; /* Texto rojo */
+    font-size: 14px; /* Tamaño de texto */
+    margin-bottom: 10px; /* Espacio debajo */
+}

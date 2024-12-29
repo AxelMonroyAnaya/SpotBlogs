@@ -1,0 +1,86 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        {% block title %} 
+
+        {% endblock %}
+    </title>
+    <link rel="stylesheet" type="text/css" href="{% static 'css/content.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/styles.css' %}">
+
+</head>
+
+
+<body>
+
+    <header>
+        <div id="logotipo">           
+            <img src="{% static 'images/logo.png' %}" alt="">
+            <h1>BLOGS</h1>
+        </div>
+    </header>
+
+    
+    <nav>
+        <ul>
+
+            <li>
+                <a href="{% url 'index' %}">INICIO</a>
+            </li>
+            {% if user.is_authenticated %}            
+                <li>
+                    <a href="{% url 'listar_articulos' %}">Categorias</a>
+                    <ul>
+                
+                        {% for categoria in categorias%}
+                            <li>
+                                <a href="{% url 'categorias' categoria.0 %}">{{categoria.1}}</a>
+                            </li>
+                        {% endfor %}
+                    </ul>
+                </li>
+                {% for page  in pages %}
+                    <li>
+                        <a href="{% url 'pagina' page.2 %}"> {{page.1}}</a>
+                    </li>
+                {% endfor %}
+                <li>
+                    <a href="{% url 'logout' %}">Cerrar sesion</a>
+                </li>
+            {% else %}
+                <li>
+                    <a href="{% url 'registro' %}">Registro</a>
+                </li> 
+                <li>
+                    <a href="{% url 'login' %}">iniciar sesion</a>
+                </li>
+            {% endif %}          
+        </ul>
+    </nav>
+
+    <div class="barra">
+        <span class="esquina-izquierda"></span>
+        <span class="relleno"></span>
+        <span class="esquina-derecha"></span>
+    </div>
+
+    <div class="content">
+        <div class="box">
+            {% block content %}
+                <strong>variable por defecto</strong>
+            {% endblock %}
+        </div>
+    </div>
+
+
+</body>
+
+<footer>
+    <h4>Master en py &copy; | AXEL sistema de blogs</h4>
+</footer>
+
+</html>
