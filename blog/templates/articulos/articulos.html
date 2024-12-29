@@ -1,0 +1,27 @@
+{% for article in articles %}   
+    <article class="article-item">
+        <div class = "data">
+            <h2><a href="{% url 'articulo_solo' article.id %}">{{article.title}}</a></h2>
+            <h3>Categorias: </h3>
+            {% for category in article.categoria.all %}
+                <h5>{{category}}</h5>
+                {% if forlooup.counter < article.categoria.all|length %}
+                    <h1> / </h1>
+                {% endif %}
+            {% endfor %}
+            <span class="date"> {{article.created_at}}</span>
+            <p> 
+                {{article.content|safe}}
+            </p>
+        </div>
+        <div class="clearfix"></div>
+        {% if article.image != 'null' and article.image.url|length >= 1 %}
+            <div class=" image">
+                <img src="{{ article.image.url }}" alt="Imagen de artículo">
+            </div>
+        {% else %}
+            <p>No hay imagen disponible.</p>
+        {% endif %}
+        <p>&copy;{{article.user}} {{ article.created_at|date:"Y, d" }}</p>
+    <article>
+{% endfor %}

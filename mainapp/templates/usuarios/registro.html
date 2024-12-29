@@ -1,0 +1,32 @@
+{% extends "layouts/layout.html"%}
+{% load static %}
+
+
+{% block content %}
+<head>
+    <link rel="stylesheet" href="{% static 'css/registro.css' %}">
+</head>
+<h1>{{ title }}</h1>
+{{registro_form.errors}}
+<form method="post">
+    {% csrf_token %}
+    <label for="id_username">Usuario</label>
+    {{ registro_form.username }}
+    
+    <label for="id_first_name">Nombre</label>
+    {{ registro_form.first_name }}
+    
+    <label for="id_last_name">Apellido</label>
+    {{ registro_form.last_name }}
+    
+    <label for="id_email">Correo electrónico</label>
+    {{ registro_form.email }}
+    
+    <label for="id_password1">Contraseña</label>
+    {{ registro_form.password1 }}
+    
+    <label for="id_password2">Confirma Contraseña</label>
+    {{ registro_form.password2 }}
+    <button type="submit">Registrarse</button>
+</form>
+{% endblock %}
