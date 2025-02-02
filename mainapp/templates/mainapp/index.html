@@ -7,7 +7,7 @@
 {% endblock %}
 
 {% block content %}
-    <H1>{{title}}</H1>
+
     {% if messages %} <!-- comprueba si hay mensajes flash -->
         <ul>
         {% for message in messages %}
@@ -15,12 +15,18 @@
         {% endfor %}
         </ul>
     {% endif %}
-    
-    {% if request.user.email and request.user.first_name %}
-        <h2>Bienvenido, {{ request.user.first_name }}</h2>
-        <a href="mailto:{{ request.user.email }}">correo</a>
+    {% if user.is_authenticated %}
+        {% if request.user.email and request.user.first_name %}
+            <h2>Bienvenido, {{ request.user.first_name }}</h2>
+            <a href="mailto:{{ request.user.email }}">correo</a>
+        {% else %}
+            <h1> datos no encontrados </h1>
+        {% endif %}
+        <H1>{{title}}</H1>
     {% else %}
-        <a href="{% url 'login' %}">Inicia sesión</a>
+        <h1> aun no has iniciado sesion </h1>
+        <a href="{% url 'login' %}">inicia sesion aqui</a>
+
     {% endif %}
 
     {% endblock %}

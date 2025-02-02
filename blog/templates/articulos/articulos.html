@@ -1,3 +1,6 @@
+{% load static %}
+<link rel="stylesheet" type="text/css" href="{% static 'css/articulos.css' %}">
+
 {% for article in articles %}   
     <article class="article-item">
         <div class = "data">
@@ -10,9 +13,6 @@
                 {% endif %}
             {% endfor %}
             <span class="date"> {{article.created_at}}</span>
-            <p> 
-                {{article.content|safe}}
-            </p>
         </div>
         <div class="clearfix"></div>
         {% if article.image != 'null' and article.image.url|length >= 1 %}
