@@ -95,9 +95,9 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
         'NAME': 'proyectodjango',
-        'USER': 'root',
-        'PASSWORD': '',
-        'HOST': 'localhost',
+        'USER': 'admin',
+        'PASSWORD': 'BH6$9Es66bv2!3cA6.2',
+        'HOST': 'systemablogsmysql.chas6g4w2wsu.us-east-2.rds.amazonaws.com',
         'PORT': 3306
     }
 }
