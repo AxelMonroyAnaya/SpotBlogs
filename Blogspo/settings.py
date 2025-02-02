@@ -26,7 +26,7 @@ SECRET_KEY = 'django-insecure-$l65bi#-s4%%kwj5o(3v%vlue!))e(e$i7n$_xa$euv%&zy^=z
 DEBUG = True
 
 ALLOWED_HOSTS = [
-        'spotblogs-3.onrender.com',
+        'spotblogs-4.onrender.com',
 ]
 
 
