@@ -1,78 +1,128 @@
-#content{
-    width: 1250 px;
-    min-height:  930px;
+#content {
+    width: 1250px;
+    min-height: 930px;
     margin: 0 auto;
     margin-top: 60px;
     margin-bottom: 30px;
 }
 
-.box{
-    background: white;
-    border-radius: 10px;
+.box {
+    background: linear-gradient(360deg, #7b2bd6, #2b0b17);
+    border-radius: 15px;
     width: 890px;
     min-height: 935px;
-    padding: 20px;
-    border: 1px solid #ddd;
+    padding: 25px;
+    border: 2px solid #6A1B9A; /* Borde morado */
     margin: 0 auto;
+    box-shadow: 0px 0px 20px rgba(106, 27, 154, 0.5); /* Sombra morada */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
+
+.box:hover {
+    transform: translateY(-5px); /* Efecto de levitación */
+    box-shadow: 0px 10px 30px rgba(106, 27, 154, 0.7); /* Sombra más intensa al hacer hover */
+}
+
 .box a {
     font-size: 20px;
     font-family: 'Georgia', serif;
-    color: #1E90FF;
+    color: #9C27B0; /* Morado claro */
     text-decoration: none;
+    transition: color 0.3s ease;
 }
 
 .box a:hover {
+    color: #6A1B9A; /* Morado más oscuro */
     text-decoration: underline;
-    color: rgb(2, 116, 2);
-    transition: all 100ms;
 }
 
-.box .image{
+.box .image {
     width: 45%;
     float: left;
     margin-right: 40px;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.box .image:hover {
+    transform: scale(1.05); /* Efecto de zoom al hacer hover */
 }
 
 .box .image img {
     width: 100%;
+    border-radius: 10px;
 }
 
-.title{
-    color: #444;
+.title {
+    color: #E1BEE7; /* Morado claro */
     letter-spacing: 1px;
-    font-size:30px;
+    font-size: 30px;
     margin-bottom: 10px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Sombra de texto */
 }
 
-footer{
+footer {
     width: 1250px;
-    background-color: #1B1E1F;
-    border: 1px solid #333;
-    border-radius: 3px;
+    background-color: #1B1E1F; /* Fondo negro */
+    border: 2px solid #6A1B9A; /* Borde morado */
+    border-radius: 10px;
     color: #D1D4D6;
     text-align: center;
     margin: 0 auto;
     margin-top: 40px;
     padding-top: 20px;
     padding-bottom: 20px;
-    box-shadow: 0px 0px 20px gray;
+    box-shadow: 0px 0px 20px rgba(106, 27, 154, 0.5); /* Sombra morada */
+    transition: background-color 0.3s ease;
 }
+
+footer:hover {
+    background-color: #6A1B9A; /* Cambio de color al hacer hover */
+}
+
 .box form input,
-.box form label{
+.box form label {
     display: block;
     padding: 5px;
     padding-left: 0%;
 }
 
-.box form input[type="text"], 
-.box form input[type="password"], 
-.box form input[type="email"], 
+.box form input[type="text"],
 .box form input[type="password"],
-.box form textarea{
+.box form input[type="email"],
+.box form textarea {
     width: 100%;
     padding: 10px;
     margin-bottom: 10px;
-    border: 1px solid #d6d6d6;
+    border: 2px solid #6A1B9A; /* Borde morado */
     border-radius: 5px;
+    background-color: #1B1E1F; /* Fondo negro */
+    color: #E1BEE7; /* Texto morado claro */
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.box form input[type="text"]:focus,
+.box form input[type="password"]:focus,
+.box form input[type="email"]:focus,
+.box form textarea:focus {
+    border-color: #9C27B0; /* Borde morado claro al enfocar */
+    box-shadow: 0px 0px 10px rgba(156, 39, 176, 0.5); /* Sombra morada al enfocar */
+    outline: none;
+}
+
+/* Animación para los botones */
+.box form input[type="submit"] {
+    background-color: #6A1B9A; /* Fondo morado */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.box form input[type="submit"]:hover {
+    background-color: #9C27B0; /* Fondo morado claro al hacer hover */
+    transform: scale(1.05); /* Efecto de zoom al hacer hover */
 }

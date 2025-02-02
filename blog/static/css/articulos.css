@@ -1,0 +1,119 @@
+/* Estilos generales para centrar y oscurecer la tipografía */
+body{
+    height: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9; /* Fondo claro para mejor contraste */
+}
+
+/* Contenedor principal para centrar la lista de artículos */
+.container {
+    width: 80%;
+    max-width: 800px;
+    text-align: center;
+}
+
+/* Estilos generales para la lista de artículos */
+.article-item {
+    border-bottom: 1px solid #ddd;
+    padding: 20px 0;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centrar horizontalmente */
+    text-align: center; /* Centrar texto */
+}
+
+/* Estilo para el contenedor de datos */
+.data {
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+/* Estilo para el título del artículo */
+.data h2 {
+    font-size: 1.8em;
+    margin-bottom: 10px;
+    color: #222; /* Tipografía más oscura */
+}
+
+.data h2 a {
+    text-decoration: none;
+    color: #222; /* Tipografía más oscura */
+}
+
+.data h2 a:hover {
+    color: #007BFF; /* Color al pasar el mouse */
+}
+
+/* Estilo para las categorías */
+.data h3 {
+    font-size: 1.2em;
+    color: #444; /* Tipografía más oscura */
+    margin-bottom: 5px;
+}
+
+.data h5 {
+    display: inline-block;
+    font-size: 1em;
+    color: #555; /* Tipografía más oscura */
+    margin-right: 5px;
+}
+
+.data h1 {
+    display: inline-block;
+    font-size: 1em;
+    color: #555; /* Tipografía más oscura */
+    margin-right: 5px;
+}
+
+/* Estilo para la fecha */
+.data .date {
+    font-size: 0.9em;
+    color: #666; /* Tipografía más oscura */
+    display: block;
+    margin-bottom: 10px;
+}
+
+/* Estilo para el contenido del artículo */
+.data p {
+    font-size: 1em;
+    line-height: 1.6;
+    color: #333; /* Tipografía más oscura */
+}
+
+/* Estilo para la imagen del artículo */
+.image {
+    width: 100%;
+    margin-top: 15px;
+}
+
+.image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilo para el mensaje de no imagen disponible */
+.article-item p {
+    font-size: 0.9em;
+    color: #666; /* Tipografía más oscura */
+    margin-top: 10px;
+}
+
+/* Estilo para el pie de página del artículo */
+.article-item > p {
+    font-size: 0.9em;
+    color: #444; /* Tipografía más oscura */
+    margin-top: 10px;
+}
+
+/* Limpiar floats */
+.clearfix {
+    clear: both;
+}
