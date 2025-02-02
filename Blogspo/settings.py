@@ -25,7 +25,9 @@ SECRET_KEY = 'django-insecure-$l65bi#-s4%%kwj5o(3v%vlue!))e(e$i7n$_xa$euv%&zy^=z
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [
+        'spotblogs-3.onrender.com',
+]
 
 
 # Application definition
