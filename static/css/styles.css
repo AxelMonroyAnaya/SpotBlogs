@@ -1,0 +1,170 @@
+/* styles.css */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+    text-decoration: none;
+}
+
+body {
+    background-color: #F2F2F2;
+    color: #333;
+}
+
+header {
+    width: 100%;
+    height: 140px;
+    background-color: #1B1E1F; /* Fondo negro */
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3); /* Sombra */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#logotipo {
+    display: flex;
+    align-items: center;
+}
+
+#logotipo img {
+    width: 60px;
+    height: auto;
+    margin-right: 20px;
+}
+
+#logotipo h1 {
+    color: #9C27B0; /* Morado claro */
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: normal;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Sombra de texto */
+}
+
+nav {
+    width: 100%;
+    background-color: #1B1E1F; /* Fondo negro */
+    border: 1px solid #6A1B9A; /* Borde morado */
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3); /* Sombra */
+    font-size: 13px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+}
+
+nav ul li {
+    position: relative;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #F2F2F2;
+    padding: 10px 20px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: #9C27B0; /* Morado claro */
+    color: white;
+    border-radius: 5px;
+}
+
+nav ul li ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #1B1E1F; /* Fondo negro */
+    border: 1px solid #6A1B9A; /* Borde morado */
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3); /* Sombra */
+}
+
+nav ul li:hover ul {
+    display: block;
+}
+
+nav ul li ul li {
+    width: 160px;
+    padding: 10px;
+    border-bottom: 1px solid #6A1B9A; /* Borde morado */
+}
+
+nav ul li ul li a {
+    color: #F2F2F2;
+}
+
+nav ul li ul li:hover {
+    background-color: #9C27B0; /* Morado claro */
+}
+
+.barra {
+    width: 100%;
+    height: 20px;
+    background-color: #6A1B9A; /* Morado oscuro */
+    margin: 20px 0;
+}
+
+.content {
+    display: flex; /* Activa Flexbox */
+    align-items: flex-start; /* Alinea los elementos en la parte superior */
+    justify-content: flex-start; /* Alinea los elementos a la izquierda */
+    gap: 50px; /* Espaciado entre elementos */
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+#hora {
+    margin-bottom: auto;
+}
+
+#reloj {
+    user-select: none;
+    margin-right: auto;
+    margin-bottom: auto;
+    font-family: 'Arial', sans-serif;
+    color: white;
+    font-size: 2rem;
+    background: linear-gradient(45deg, #6609d1, #2b0b17);
+    border-radius: 10px;
+    text-align: center;
+    width: 140px;
+    height: auto;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    transition-duration: 200ms;
+}
+
+#reloj:hover {
+    color: rgb(0, 0, 0);
+    font-size: 2rem;
+    background: linear-gradient(45deg, #a86af0, #2b0b17);
+    transform: translateY(-5px); /* Efecto de levitación */
+}
+
+.box {
+    background-color: #1B1E1F; /* Fondo negro */
+    border-radius: 10px;
+    padding: 20px;
+    border: 1px solid #6A1B9A; /* Borde morado */
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3); /* Sombra */
+    color: #E1BEE7; /* Texto morado claro */
+}
+
+footer {
+    width: 100%;
+    background-color: #1B1E1F; /* Fondo negro */
+    border: 1px solid #6A1B9A; /* Borde morado */
+    color: #F2F2F2;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 40px;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3); /* Sombra */
+}
+
+footer h4 {
+    margin: 0;
+    font-size: 16px;
+}

@@ -1,0 +1,54 @@
+/* articulo.css */
+
+/* Centrar todo el contenido de la página */
+body{
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: Arial, sans-serif;
+}
+
+/* Estilo para el contenedor del artículo */
+.articulo {
+    text-align: center;
+    max-width: 800px;
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+/* Estilo para el título del artículo */
+.title {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+/* Estilo para el contenido del artículo */
+.articulo h2 {
+    font-size: 1.5em;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+/* Estilo para la imagen del artículo */
+.articulo img {
+    max-width: 50%;
+    height: auto;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+
+/* Estilo para el mensaje de no imagen disponible */
+.articulo p {
+    font-size: 1.2em;
+    color: #888;
+}
+
+/* Estilo para el pie de página */
+p {
+    font-size: 1em;
+    color: #555;
+    margin-top: 20px;
+}
