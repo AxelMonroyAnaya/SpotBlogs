@@ -60,3 +60,31 @@
     text-align: center;
     margin-top: 15px;
 }
+
+@media (max-width: 768px) {
+    .ultimo-articulo {
+        max-width: 70%; /* Que ocupe el 90% del ancho de la pantalla */
+        padding: 10px; /* Reducir el padding */
+        font-size: 10px; /* Ajustar el tamaño de la fuente */
+    }
+    
+    .ultimo-articulo h1 {
+        font-size: 1.0em; /* Reducir el tamaño del título principal */
+    }
+    
+    .ultimo-articulo h1:nth-child(2) {
+        font-size: 1.0em; /* Ajustar subtítulos */
+    }
+    
+    .ultimo-articulo h1:last-child {
+        font-size: 1.0em; /* Ajustar el último título */
+    }
+    
+    .ultimo-articulo h3 {
+        font-size: 1.0em; /* Ajustar el tamaño del encabezado */
+    }
+    
+    .ultimo-articulo img {
+        margin: 15px auto; /* Ajustar el margen de la imagen */
+    }
+}

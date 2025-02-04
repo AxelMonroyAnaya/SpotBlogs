@@ -126,3 +126,48 @@ footer:hover {
     background-color: #9C27B0; /* Fondo morado claro al hacer hover */
     transform: scale(1.05); /* Efecto de zoom al hacer hover */
 }
+
+@media (max-width: 768px) {
+    #content {
+        width: 100%; /* Ocupa el 100% del ancho de la pantalla */
+        min-height: auto; /* Altura automática */
+        margin-top: 20px;
+        margin-bottom: 20px;
+        padding: 10px; /* Añade un poco de padding */
+    }
+
+    .box {
+        width: 100%; /* Ocupa el 100% del ancho */
+        min-height: auto; /* Altura automática */
+        padding: 15px; /* Reduce el padding */
+    }
+
+    .box .image {
+        width: 100%; /* La imagen ocupa el 100% del ancho */
+        float: none; /* Elimina el float */
+        margin-right: 0; /* Elimina el margen derecho */
+        margin-bottom: 20px; /* Añade margen inferior */
+    }
+
+    .title {
+        font-size: 24px; /* Reduce el tamaño de la fuente */
+    }
+
+    footer {
+        width: 100%; /* Ocupa el 100% del ancho */
+        margin-top: 20px;
+        padding: 15px; /* Reduce el padding */
+    }
+
+    .box form input[type="text"],
+    .box form input[type="password"],
+    .box form input[type="email"],
+    .box form textarea {
+        padding: 8px; /* Reduce el padding */
+    }
+
+    .box form input[type="submit"] {
+        width: 100%; /* El botón ocupa el 100% del ancho */
+        padding: 10px; /* Ajusta el padding */
+    }
+}
