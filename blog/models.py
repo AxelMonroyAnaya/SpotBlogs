@@ -13,7 +13,7 @@ class Categoria(models.Model):
 class Articulo(models.Model):
     title = models.CharField(max_length=30)
     content = RichTextField()
-    image = models.ImageField(default='null', upload_to='articles')
+    image = models.ImageField(upload_to='articles', blank=True, null=True)
     user = models.ForeignKey(User,editable=False , on_delete=models.CASCADE)
     categoria = models.ManyToManyField(Categoria, verbose_name='categorias', blank=True)
     public = models.BooleanField(verbose_name="publicado?")
