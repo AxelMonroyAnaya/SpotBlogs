@@ -92,8 +92,17 @@ nav ul li:hover ul {
     background: #f9f9f9;
 }
 
-/* RESPONSIVE DESIGN */
+/* FOOTER */
+footer {
+    text-align: center;
+    padding: 10px;
+    background: #222;
+    color: white;
+}
+
+/* RESPONSIVE DESIGN SOLO PARA PANTALLAS PEQUEÑAS */
 @media (max-width: 768px) {
+    /* Ajustes del logotipo */
     #logotipo {
         flex-direction: column;
     }
@@ -102,6 +111,7 @@ nav ul li:hover ul {
         font-size: 1.2rem;
     }
 
+    /* Menú en columna */
     nav ul {
         flex-direction: column;
         text-align: center;
@@ -111,6 +121,7 @@ nav ul li:hover ul {
         width: 100%;
     }
 
+    /* Ajustes del contenido */
     .content {
         width: 100%;
         padding: 10px;
@@ -118,6 +129,23 @@ nav ul li:hover ul {
 
     .box {
         padding: 10px;
+    }
+
+    /* Ajustes para la hora y el reloj */
+    #hora {
+        font-size: 1.2rem;
+    }
+
+    #reloj {
+        font-size: 1.5rem;
+        font-weight: bold;
+        text-align: center;
+        background: #222;
+        color: white;
+        padding: 10px;
+        width: 150px;
+        margin: 10px auto;
+        border-radius: 10px;
     }
 
     /* Evita desplazamiento lateral en móviles */
