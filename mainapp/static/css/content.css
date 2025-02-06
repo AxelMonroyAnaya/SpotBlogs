@@ -127,7 +127,7 @@ footer:hover {
     transform: scale(1.05); /* Efecto de zoom al hacer hover */
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1000px) {
     #content {
         width: 100%; /* Ocupa el 100% del ancho de la pantalla */
         min-height: auto; /* Altura automática */

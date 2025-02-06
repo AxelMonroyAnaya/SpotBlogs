@@ -107,7 +107,15 @@ nav ul li ul li:hover {
     margin: 20px 0;
 }
 
-
+.content {
+    display: flex; /* Activa Flexbox */
+    align-items: flex-start; /* Alinea los elementos en la parte superior */
+    justify-content: flex-start; /* Alinea los elementos a la izquierda */
+    gap: 50px; /* Espaciado entre elementos */
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+}
 
 #hora {
     margin-bottom: auto;
